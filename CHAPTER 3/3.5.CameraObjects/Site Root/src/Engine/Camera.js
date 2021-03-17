@@ -65,14 +65,14 @@ mat4.lookAt(this.mViewMatrix,
     var halfWCWidth = 0.5 * this.mWCWidth;
     var halfWCHeight = halfWCWidth * this.mViewport[3] / this.mViewport[2];
     // WCHeight = WCWidth * viewportHeight / viewportWidth
-    mat4.ortho(this.mProjMatrix,
-    -halfWCWidth, // distant to left of WC
-    halfWCWidth, // distant to right of WC
-    -halfWCHeight, // distant to bottom of WC
-    halfWCHeight, // distant to top of WC
-    this.mNearPlane, // z-distant to near plane
-    this.mFarPlane // z-distant to far plane);
-    );
+mat4.ortho(this.mProjMatrix,
+-halfWCWidth, // distant to left of WC
+halfWCWidth, // distant to right of WC
+-halfWCHeight, // distant to bottom of WC
+halfWCHeight, // distant to top of WC
+this.mNearPlane, // z-distant to near plane
+this.mFarPlane // z-distant to far plane);
+);
     // Step B3: concatnate view and project matrices
-    mat4.multiply(this.mVPMatrix, this.mProjMatrix, this.mViewMatrix);
-    };
+mat4.multiply(this.mVPMatrix, this.mProjMatrix, this.mViewMatrix);
+};
