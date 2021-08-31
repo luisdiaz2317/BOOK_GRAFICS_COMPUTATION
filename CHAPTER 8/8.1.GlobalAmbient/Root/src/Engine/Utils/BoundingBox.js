@@ -1,4 +1,11 @@
+/* 
+ * File: BoundingBox.js
+ * Encapsulates an axis aligned box
+ */
 
+/*jslint node: true, vars: true, bitwise: true */
+/*global vec2 */
+/* find out more about jslint: http://www.jslint.com/help.html */
 "use strict";
 
 function BoundingBox(centerPos, w, h) {

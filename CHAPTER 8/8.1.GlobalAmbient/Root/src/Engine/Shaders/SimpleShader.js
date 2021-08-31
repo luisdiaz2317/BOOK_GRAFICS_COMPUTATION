@@ -1,3 +1,13 @@
+/* 
+ * File: SimpleShader.js
+ * 
+ * Implements a SimpleShader object.
+ * 
+ */
+
+/*jslint node: true, vars: true */
+/*global gEngine: false, alert: false, XMLHttpRequest: false */
+/* find out more about jslint: http://www.jslint.com/help.html */
 
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 
@@ -86,7 +96,18 @@ SimpleShader.prototype.cleanUp = function () {
     gl.deleteShader(this.mVertexShader);
     gl.deleteShader(this.mFragmentShader);
 };
+//-- end of public methods
+// </editor-fold>
 
+// <editor-fold desc="Private Methods">
+//**-----------------------------------
+// Private methods not mean to call by outside of this object
+//    naming convention: starts with an "_"
+// **------------------------------------
+
+// 
+// Returns a compiled shader from a shader in the dom.
+// The id is the id of the script in the html tag.
 SimpleShader.prototype._compileShader = function (filePath, shaderType) {
     var gl = gEngine.Core.getGL();
     var shaderSource = null, compiledShader = null;

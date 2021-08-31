@@ -1,3 +1,10 @@
+/*
+ * File: Engine_DefaultResources.js 
+ */
+/*jslint node: true, vars: true, evil: true, white: true */
+/*global SimpleShader, TextureShader, SpriteShader, LineShader, vec4 */
+/* find out more about jslint: http://www.jslint.com/help.html */
+
 
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 

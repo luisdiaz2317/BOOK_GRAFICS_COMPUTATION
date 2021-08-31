@@ -1,3 +1,11 @@
+/*
+ * File: EngineCore_Texture.js 
+ * Provides support for loading and unloading of textures (images)
+ */
+
+/*jslint node: true, vars: true */
+/*global Image, Uint8Array, alert */
+/* find out more about jslint: http://www.jslint.com/help.html */
 
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 

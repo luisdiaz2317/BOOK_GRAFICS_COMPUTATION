@@ -1,3 +1,12 @@
+/* File: SpriteRenderable_PixelCollision.js 
+ *
+ * implements the _setTexInfo() function to support per-pixel collision for 
+ * sprite elements
+ */
+
+/*jslint node: true, vars: true */
+/*global gEngine, SpriteRenderable */
+/* find out more about jslint: http://www.jslint.com/help.html */
 
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 

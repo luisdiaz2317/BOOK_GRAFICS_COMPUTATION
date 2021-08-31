@@ -1,3 +1,11 @@
+/*
+ * File: EngineCore_Audio.js 
+ * Provides support for loading and unloading of Audio clips
+ */
+
+/*jslint node: true, vars: true, evil: true */
+/*global gEngine: false, SimpleShader: false, window: false, alert: false, XMLHttpRequest: false */
+/* find out more about jslint: http://www.jslint.com/help.html */
 
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 

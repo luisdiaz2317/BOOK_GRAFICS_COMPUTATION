@@ -1,4 +1,13 @@
+/*
+ * File: TextureRenderable.js
+ *  
+ * Renderable objects with textures
+ */
+/*jslint node: true, vars: true */
+/*global gEngine: false, Renderable: false */
+/* find out more about jslint: http://www.jslint.com/help.html */
 
+// Constructor and object definition
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 
 function TextureRenderable(myTexture) {
@@ -21,6 +30,10 @@ function TextureRenderable(myTexture) {
 }
 gEngine.Core.inheritPrototype(TextureRenderable, Renderable);
 
+//<editor-fold desc="Public Methods">
+//**-----------------------------------------
+// Public methods
+//**-----------------------------------------
 TextureRenderable.prototype.draw = function (aCamera) {
     // activate the texture
     gEngine.Textures.activateTexture(this.mTexture);

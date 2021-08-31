@@ -1,4 +1,11 @@
+/* 
+ * File: Camera.js
+ * Encapsulates the user define WC and Viewport functionality
+ */
 
+/*jslint node: true, vars: true, bitwise: true */
+/*global gEngine, SimpleShader, Renderable, mat4, vec2, vec3, BoundingBox, CameraState */
+/* find out more about jslint: http://www.jslint.com/help.html */
 "use strict";
 
 // wcCenter: is a vec2

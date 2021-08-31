@@ -1,4 +1,11 @@
+/* 
+ * File: CameraState.js
+ * Defines the state of a camera to faciliate the manipulation of this state
+ */
 
+/*jslint node: true, vars: true, bitwise: true */
+/*global gEngine, Interpolate, InterpolateVec2 */
+/* find out more about jslint: http://www.jslint.com/help.html */
 "use strict";
 
 //

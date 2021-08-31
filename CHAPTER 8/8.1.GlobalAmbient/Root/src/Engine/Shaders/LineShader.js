@@ -1,3 +1,10 @@
+/* 
+ * File: LineShader.js
+ *          for debugging physics engine
+ */
+/*jslint node: true, vars: true */
+/*global gEngine, SimpleShader */
+/* find out more about jslint: http://www.jslint.com/help.html */
 
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 

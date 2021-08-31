@@ -1,3 +1,13 @@
+/* 
+ * File: SpriteShader.js
+ * Subclass from TextureShader
+ * Implements a Textured ShaderProgram object where texture coordinate can be changed
+ * at run time.
+ */
+
+/*jslint node: true, vars: true */
+/*global gEngine: false, SimpleShader: false, TextureShader: false, Float32Array: false */
+/* find out more about jslint: http://www.jslint.com/help.html */
 
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 

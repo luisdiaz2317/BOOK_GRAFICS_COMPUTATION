@@ -1,3 +1,11 @@
+/* File: TextureRenderable_PixelCollision.js 
+ *
+ * Implements the pixelTouches() and related supporting functions of TextureRenderable
+ */
+
+/*jslint node: true, vars: true */
+/*global gEngine, TextureRenderable, vec2 */
+/* find out more about jslint: http://www.jslint.com/help.html */
 
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 

@@ -1,4 +1,11 @@
+/* 
+ * File: ShakePosition.js
+ * traces the locus of a pseudo-damped simple harmonic motion
+ */
 
+/*jslint node: true, vars: true, bitwise: true */
+/*global gEngine, vec2 */
+/* find out more about jslint: http://www.jslint.com/help.html */
 "use strict";
 
 //

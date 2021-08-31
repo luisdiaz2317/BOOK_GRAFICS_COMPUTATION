@@ -1,4 +1,11 @@
+/* 
+ * File: InterpolateVec2.js
+ * Encapsulates linear interpolation of vec2, calls gl-matrixjs::lerp
+ */
 
+/*jslint node: true, vars: true */
+/*global gEngine: false, vec2: false, Interpolate: false */
+/* find out more about jslint: http://www.jslint.com/help.html */
 "use strict";
 
 

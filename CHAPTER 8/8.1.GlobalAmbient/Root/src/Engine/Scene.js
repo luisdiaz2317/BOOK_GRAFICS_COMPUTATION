@@ -1,3 +1,10 @@
+/* 
+ * The template for a scene.
+ */
+
+/*jslint node: true, vars: true */
+/*global gEngine: false, Transform: false */
+/* find out more about jslint: http://www.jslint.com/help.html */
 
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 

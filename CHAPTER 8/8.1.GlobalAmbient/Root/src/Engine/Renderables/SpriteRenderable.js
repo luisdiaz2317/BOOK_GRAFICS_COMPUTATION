@@ -1,4 +1,13 @@
+/*
+ * File: SpriteRenderable.js
+ *  
+ * Texture objects where texture coordinate can change
+ */
+/*jslint node: true, vars: true */
+/*global gEngine: false, Renderable: false, TextureRenderable: false */
+/* find out more about jslint: http://www.jslint.com/help.html */
 
+// Constructor and object definition
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 
 function SpriteRenderable(myTexture) {
@@ -28,6 +37,10 @@ SpriteRenderable.eTexCoordArray = Object.freeze({
     eTop: 1,
     eBottom: 5
 });
+
+//**-----------------------------------------
+// Public methods
+//**-----------------------------------------
 
 // specify element region by texture coordinate (between 0 to 1)
 SpriteRenderable.prototype.setElementUVCoordinate = function (left, right, bottom, top) {

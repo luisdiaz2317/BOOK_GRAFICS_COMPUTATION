@@ -1,4 +1,14 @@
+/*
+ * File: LineRenderable.js
+ *  
+ * Renderable objects for lines
+ */
 
+/*jslint node: true, vars: true */
+/*global gEngine, Renderable, vec2*/
+/* find out more about jslint: http://www.jslint.com/help.html */
+
+// Constructor and object definition
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 
 // p1, p2: either both there, or none
@@ -20,6 +30,10 @@ function LineRenderable(x1, y1, x2, y2) {
 }
 gEngine.Core.inheritPrototype(LineRenderable, Renderable);
 
+//<editor-fold desc="Public Methods">
+//**-----------------------------------------
+// Public methods
+//**-----------------------------------------
 LineRenderable.prototype.draw = function (aCamera) {
     this.mShader.setPointSize(this.mPointSize);
     // Draw line instead of triangle!

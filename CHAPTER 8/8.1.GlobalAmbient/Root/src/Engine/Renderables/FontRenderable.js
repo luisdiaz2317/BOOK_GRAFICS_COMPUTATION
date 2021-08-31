@@ -1,4 +1,12 @@
+/*
+ * File: FontRenderable.js 
+ */
 
+/*jslint node: true, vars: true */
+/*global gEngine: false, Transform: false, SpriteRenderable: false */
+/* find out more about jslint: http://www.jslint.com/help.html */
+
+// Constructor and object definition
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 
 function FontRenderable(aString) {
@@ -7,6 +15,11 @@ function FontRenderable(aString) {
     this.mXform = new Transform(); // transform that moves this object around
     this.mText = aString;
 }
+
+//<editor-fold desc="Public Methods">
+//**-----------------------------------------
+// Public methods
+//**-----------------------------------------
 FontRenderable.prototype.draw = function (aCamera) {
     // we will draw the text string by calling to mOneChar for each of the
     // chars in the mText string.

@@ -1,4 +1,13 @@
-s
+/*
+ * File: EngineCore.js 
+ * The first iteration of what the core of our game engine would look like.
+ */
+/*jslint node: true, vars: true, evil: true */
+/*global document */
+/* find out more about jslint: http://www.jslint.com/help.html */
+
+//  Global variable EngineCore
+//  the following syntax enforces there can only be one instance of EngineCore object
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 
 var gEngine = gEngine || { };
@@ -29,6 +38,10 @@ gEngine.Core = (function () {
         }
     };
 
+    //**----------------------------
+    // Public methods:
+    //**-----------------------------
+    //
     // Accessor of the webgl context
     var getGL = function () { return mGL; };
 

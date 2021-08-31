@@ -1,3 +1,15 @@
+/*
+ * File: EngineCore_VertexBuffer.js
+ *  
+ * defines the object that supports the loading and using of the buffer that 
+ * contains vertex positions of a square onto the gGL context
+ * 
+ * Notice, this is a singleton object.
+ */
+
+/*jslint node: true, vars: true */
+/*global Float32Array */
+/* find out more about jslint: http://www.jslint.com/help.html */
 
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 

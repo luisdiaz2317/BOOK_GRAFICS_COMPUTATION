@@ -1,3 +1,12 @@
+/* 
+ * File: TextureShader.js
+ * Subclass from SimpleShader
+ * Implements a Textured ShaderProgram object.
+ */
+
+/*jslint node: true, vars: true */
+/*global gEngine: false, SimpleShader: false */
+/* find out more about jslint: http://www.jslint.com/help.html */
 
 "use strict";  // Operate in Strict mode such that variables must be declared before used!
 
