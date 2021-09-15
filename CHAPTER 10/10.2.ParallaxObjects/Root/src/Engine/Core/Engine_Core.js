@@ -34,7 +34,10 @@ gEngine.Core = (function () {
         }
     };
 
-    
+    //**----------------------------
+    // Public methods:
+    //**-----------------------------
+    //
     // Accessor of the webgl context
     var getGL = function () { return mGL; };
 

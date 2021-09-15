@@ -34,7 +34,10 @@ gEngine.Core = (function () {
         }
     };
 
-    
+    //**----------------------------
+    // Public methods:
+    //**-----------------------------
+    //
     // Accessor of the webgl context
     var getGL = function () { return mGL; };
 
@@ -50,6 +53,7 @@ gEngine.Core = (function () {
         gEngine.Input.initialize(htmlCanvasID);
         gEngine.AudioClips.initAudioContext();
         gEngine.Physics.initialize();
+        gEngine.LayerManager.initialize();
 
         // Inits DefaultResources, when done, invoke the anonymous function to call startScene(myGame).
         gEngine.DefaultResources.initialize(function () { startScene(myGame); });
